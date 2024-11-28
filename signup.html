@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Futomie | Sign Up</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/sign.css">
+  <link rel="shortcut icon" href="res/favicon.png" type=
+  "image/x-icon">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&amp;display=swap"
+  rel="stylesheet">
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-storage.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+</head>
+<body>
+  <div class="loaddin" id="loadinn">
+    <div class="lds-ripple"></div>
+  </div>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>Sign Up</h3><label id="signupError"></label> <input type=
+    "file" id="userImage" required=""> <input type="text"
+    placeholder="Name" id="username" autocomplete="off" required=
+    ""> <input type="text" placeholder="Email" id="email"
+    autocomplete="off" required=""> <input type="text" placeholder=
+    "Tag" id="tagname" autocomplete="off" required=""> <input type=
+    "password" placeholder="Password" id="password" required=""
+    autocomplete="off"> <button id="signMeUp">Sign Up</button>
+    <div class="social">
+      <a href='/forgortpassword'></a> <a href='/login'>Sign
+      In</a>
+    </div>
+  </form>
+  <script src="app-data/signup.js"></script>
+</body>
+</html>

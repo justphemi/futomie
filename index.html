@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
+  <title>Futomie</title>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-storage.js"></script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+</head>
+<body>
+  <div class="log" id="logBase">
+    <div class="log-question">
+      <label class="log-txt">Are you sure you want to log
+      out?</label>
+      <div class="dec">
+        <button id="noLog">No</button> <button id=
+        "yesLog">Yes</button>
+      </div>
+    </div>
+  </div>
+  <div class="loaddin" id="loadinn">
+    <div class="lds-ripple"></div>
+  </div>
+  <div class="socio-container">
+    <div class="new-friend" id="newFriend">
+      <img src="res/circle-xmark.png" alt="" id="closenewpage">
+      <label class="f-txt">Find your buddies..</label>
+      <div class="in" id="in">
+        <img src="res/search.png" alt="" class="loupe">
+        <input type="search" id="searchBuddyTag" placeholder=
+        "Your Buddys Tag">
+      </div><button id="find">Find</button>
+      <div class="reslt" id="reslts">
+        <div class="theSt" id="theStrt">
+          <div class="start">
+            <img src="res/dummy.png" id="displayFoundImg" alt="">
+            <label id="nm"></label>
+          </div>
+        </div>
+        <div class="noone" id="noonetxt">
+          <label id="theresNoUser">This user is already in your
+          chat list</label>
+        </div>
+      </div>
+    </div>
+    <div class="profile" id="profilep">
+      <img src="res/circle-xmark.png" alt="" class="closepage" id=
+      "closeProfile"> <img src="res/dummy.png" alt="" class=
+      "profile-img" id="myUserImg2"> <span>NAME</span>
+      <label class="name" id="myUserName2"></label>
+      <span>TAG</span> <label class="tag" id="myUserTag"></label>
+      <span>EMAIL</span> <a href="" class="email" id=
+      "myUserEmail"></a>
+    </div>
+    <div class="header" id="headerr">
+      <div class="header-left" id="headLeft">
+        <div class="mine" id="me">
+          <img src="res/dummy.png" alt="" id="myUserImg">
+          <label id="myUserName"></label>
+        </div>
+        <div class="add" id="addNewF">
+          <span>+</span>
+        </div>
+      </div>
+      <div class="header-right" id="headRight">
+        <div class="nav" id="navgtion">
+          <img src="res/back.png" alt="" class="go-back" id=
+          "goBack"> <img src="res/dummy.png" alt="" class=
+          "active-user-img" id="navImg"> <label class=
+          "active-user-nm" id="navName"></label>
+          <div class="right">
+            <div class="stat"></div>
+          </div>
+        </div>
+      </div>
+      <div class="my-pop" id="myPop">
+        <ul>
+          <li id="showProfile">Profile</li>
+          <li id="showLogout">Logout</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trunk" id="trunk">
+      <div class="thelists" id="thelists">
+        <div class="search-users" id="in">
+          <img src="res/search.png" alt="" class="loupe">
+          <input type="search" id="searchMyBuddies" autocomplete=
+          "false" placeholder="Search Buddies..">
+        </div>
+        <div class="lists" id="lists">
+          <div class="nolist" id="noList">
+            Oops! Nothing here!
+          </div>
+        </div>
+      </div>
+      <div class="chatin" id="chatBoxx">
+        <div class="nobody" id="nobody"><img src=
+        "res/animation.gif" alt=""></div>
+        <div class="chat-cont" id="chatCont"></div>
+        <div class="input-cont" id="inputContainer">
+          <input type="text" id="msgInput" placeholder=
+          "Hey hey..."> <button id="sendMSG">SEND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app-data/data.js"></script>
+</body>
+</html>
